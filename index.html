@@ -9,6 +9,17 @@
 
 <body>
     <!-- Solicitud de correo electrónico -->
+    <div id="email-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 20px; border-radius: 10px;">
+            <h2>¡Bienvenido!</h2>
+            <p>Ingresa tu correo para estar al tanto de nuestras novedades.</p>
+            <form id="email-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <header>
         <nav>
             <ul>
@@ -116,32 +127,30 @@
     <!-- Sección de Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Contáctanos por Instagram o WhatsApp para más información.</p>
-        <p>Instagram: @oscar_roig_transporte_</p>
-        <p>WhatsApp: +54 261 470-0901</p>
-        <p>Email: OscarRoigTransporte@gmail.com</p>
-    </section>
-
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2024 Turismo en Mendoza. Todos los derechos reservados.</p>
-    </footer>
-
-    <script>
-        document.getElementById('email-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            document.getElementById('email-popup').style.display = 'none';
-        });
-    </script>
-          <div id="email-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;">
-            <div style="background: white; padding: 20px; border-radius: 10px;">
-                <h2>¡Bienvenido!</h2>
-                <p>Ingresa tu correo para estar al tanto de nuestras novedades.</p>
-                <form id="email-form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <form id="contactForm">
+                    <p>Ingresa tu correo electrónico:</p>
+                    <input type="email" placeholder="tu_email@ejemplo.com" required>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
+        <p>¿Quieres hacer una Reserva? Contáctanos a nuestras Redes.</p>
+        <p>
+            Instagram: @oscar_roig_transporte_<br>
+            WhatsApp: +54 261 470-0901<br>
+            Correo: OscarRoigTransporte@gmail.com
+        </p>
+    </section>    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario para manejo personalizado
+            alert('¡Correo enviado!'); // Muestra un mensaje (puedes eliminar esto si no lo deseas)
+            this.reset(); // Opcional: limpia el formulario
+            // Aquí puedes agregar más lógica para el envío del correo si es necesario
+        });
+    </script>     
 </body>
 </html>
