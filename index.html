@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Mendoza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Solicitud de correo electrónico -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#img">Experiencias</a></li>
+                <li><a href="#valle-uco">Valle de Uco</a></li>
+                <li><a href="#lujan">Luján</a></li>
+                <li><a href="#maipu">Maipú</a></li>
+                <li><a href="#ciudad">Ciudad</a></li>
+                <li><a href="#naturaleza">Naturaleza</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <!-- Sección Experiencias -->
+    <section id="img">
+        <h2>Experiencias en Mendoza</h2>
+        <p>Disfruta bodegas, rafting, senderismo, aguas termales y más.</p>
+        <div class="bodegas-galeria">
+            <div class="img-container">
+                <img src="catena (2).jpg" alt="Valle de Uco">
+                <div class="overlay-text">Valle de Uco</div>
+            </div>
+            <div class="img-container">
+                <img src="catena (3).jpg" alt="Luján">
+                <div class="overlay-text">Luján</div>
+            </div>
+            <div class="img-container">
+                <img src="enemigo (2).jpg" alt="Maipú">
+                <div class="overlay-text">Maipú</div>
+            </div>
+            <div class="img-container">
+                <img src="catena (3).jpg" alt="Ciudad">
+                <div class="overlay-text">Ciudad</div>
+            </div>
+            <div class="img-container">
+                <img src="potrerillos (4).jpg" alt="Naturaleza">
+                <div class="overlay-text">Naturaleza</div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Sección Valle de Uco -->
+    <section id="valle-uco">
+        <h2>Valle de Uco</h2>
+        <p>Conocido por sus vinos Malbec y Chardonnay y paisajes únicos.</p> 
+        <h2>Bodegas de Valle de Uco</h2>
+        <ul> 
+            <li>Bodega Salentein</li> 
+            <li>Bodega Domaine Bousquet</li> 
+            <li>Bodega El Enemigo</li> 
+            <li>Bodega Andeluna</li> 
+        </ul>
+    </section>
+
+    <!-- Sección Luján -->
+    <section id="lujan">
+        <h2>Luján de Cuyo</h2>
+        <p>Región destacada por la producción del mejor Malbec.</p>
+        <h2>Bodegas de Luján</h2>
+        <ul>
+            <li>Bodega Norton</li>
+            <li>Bodega Chandon</li>
+            <li>Bodega Séptima</li>
+        </ul>
+    </section>
+
+    <!-- Sección Maipú -->
+    <section id="maipu">
+        <h2>Maipú</h2>
+        <p>Bodegas históricas y ricas tradiciones vitivinícolas.</p>
+        <h2>Bodegas de Maipú</h2>
+        <ul>
+            <li>Bodega Trapiche</li>
+            <li>Bodega La Rural</li>
+            <li>Bodega López</li>
+        </ul>
+    </section>
+
+    <!-- Sección Ciudad -->
+    <section id="ciudad">
+        <h2>Ciudad de Mendoza</h2>
+        <p>Epicentro del vino y la cultura mendocina.</p>
+        <h2>Actividades en la Ciudad</h2>
+        <ul>
+            <li>City Tour</li>
+            <li>Bodega Los Toneles</li>
+            <li>Bodega Lagarde</li>
+        </ul>
+    </section>
+
+    <!-- Sección Naturaleza -->
+    <section id="naturaleza">
+        <h2>Naturaleza en Mendoza</h2>
+        <p>Montañas, valles y aventura en un entorno natural.</p>
+        <h2>Actividades en la Naturaleza</h2>
+        <ul>
+            <li>Excursiones al Aconcagua</li>
+            <li>Rafting y senderismo</li>
+            <li>Cabalgatas y parapente</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Contáctanos por Instagram o WhatsApp para más información.</p>
+        <p>Instagram: @oscar_roig_transporte_</p>
+        <p>WhatsApp: +54 261 470-0901</p>
+        <p>Email: OscarRoigTransporte@gmail.com</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Turismo en Mendoza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('email-popup').style.display = 'none';
+        });
+    </script>
+          <div id="email-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;">
+            <div style="background: white; padding: 20px; border-radius: 10px;">
+                <h2>¡Bienvenido!</h2>
+                <p>Ingresa tu correo para estar al tanto de nuestras novedades.</p>
+                <form id="email-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
