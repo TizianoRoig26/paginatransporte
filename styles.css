@@ -9,7 +9,7 @@ body {
 }
 p {
     font-size: 16px;  /* Ajustamos el tamaño de la fuente */
-    color: #ffffff;  /* Color de texto */
+    color: #cf1f1f;  /* Color de texto */
     text-align: justify;  /* Alineación justificada para mejor legibilidad */
     max-width: 700px;  /* Limitar el ancho de los párrafos */
     margin: 0 auto;  /* Centramos los párrafos dentro del contenedor */
