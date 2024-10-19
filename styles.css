@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #1F60CF;
+    background-color: #cf1f1f;
     
 }
 
@@ -86,8 +86,8 @@ section {
 
 .bodegas-galeria .img-container {
     position: relative;
-    width: 20%;
-    margin: 0%;
+    width: 18%;
+    margin: 1px;
     overflow: hidden;
 }
 
@@ -96,7 +96,6 @@ section {
     height: 100%;
     object-fit: cover;
     border: 1px solid #555555a2;
-    border-radius: 2px;
     transition: transform 0.8s ease;
 }
 
@@ -112,7 +111,6 @@ section {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    opacity: 1;
     transition: opacity 0.8s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0);
     
@@ -127,11 +125,11 @@ li  {
 h2 {
     
     font-size: 28px;
-    color: #1F8CCF;
+    color: #cf1f1f;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #1F60CF;
+    border-bottom: 2px solid #cf1f1f;
     padding-bottom: 10px;
 }
 ul {
